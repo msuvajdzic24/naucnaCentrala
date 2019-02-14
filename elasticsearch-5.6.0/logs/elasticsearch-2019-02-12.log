@@ -1,0 +1,2 @@
+[2019-02-12T19:39:48,381][WARN ][o.e.m.j.JvmGcMonitorService] [EKhPHmJ] [gc][13824] overhead, spent [924ms] collecting in the last [1.4s]
+[2019-02-12T23:57:29,296][INFO ][o.e.m.j.JvmGcMonitorService] [EKhPHmJ] [gc][29195] overhead, spent [312ms] collecting in the last [1s]

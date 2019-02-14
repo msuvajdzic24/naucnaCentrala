@@ -1,0 +1,34 @@
+[2019-02-09T20:03:41,015][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-09T20:03:41,688][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] using [1] data paths, mounts [[Programs (F:)]], net usable_space [630.6gb], net total_space [705.9gb], spins? [unknown], types [NTFS]
+[2019-02-09T20:03:41,689][INFO ][o.e.e.NodeEnvironment    ] [h9_TyQL] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-09T20:03:41,996][INFO ][o.e.n.Node               ] node name [h9_TyQL] derived from node ID [h9_TyQLbRPSW6ce165cJrQ]; set [node.name] to override
+[2019-02-09T20:03:41,998][INFO ][o.e.n.Node               ] version[5.6.0], pid[10116], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_66/25.66-b18]
+[2019-02-09T20:03:42,003][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Stefan\Desktop\elasticsearch-5.6.0]
+[2019-02-09T20:03:47,085][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [aggs-matrix-stats]
+[2019-02-09T20:03:47,086][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [ingest-common]
+[2019-02-09T20:03:47,087][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-expression]
+[2019-02-09T20:03:47,088][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-groovy]
+[2019-02-09T20:03:47,089][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-mustache]
+[2019-02-09T20:03:47,091][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [lang-painless]
+[2019-02-09T20:03:47,094][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [parent-join]
+[2019-02-09T20:03:47,095][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [percolator]
+[2019-02-09T20:03:47,096][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [reindex]
+[2019-02-09T20:03:47,101][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty3]
+[2019-02-09T20:03:47,102][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded module [transport-netty4]
+[2019-02-09T20:03:47,105][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [analysis-icu]
+[2019-02-09T20:03:47,106][INFO ][o.e.p.PluginsService     ] [h9_TyQL] loaded plugin [serbian-plugin]
+[2019-02-09T20:03:57,233][INFO ][o.e.d.DiscoveryModule    ] [h9_TyQL] using discovery type [zen]
+[2019-02-09T20:03:59,378][INFO ][o.e.n.Node               ] initialized
+[2019-02-09T20:03:59,381][INFO ][o.e.n.Node               ] [h9_TyQL] starting ...
+[2019-02-09T20:04:01,758][INFO ][o.e.t.TransportService   ] [h9_TyQL] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-09T20:04:01,798][WARN ][o.e.b.BootstrapChecks    ] [h9_TyQL] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-09T20:04:04,961][INFO ][o.e.c.s.ClusterService   ] [h9_TyQL] new_master {h9_TyQL}{h9_TyQLbRPSW6ce165cJrQ}{FRysfey8So2NUg_H5ab4Hg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-09T20:04:06,319][INFO ][o.e.h.n.Netty4HttpServerTransport] [h9_TyQL] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-09T20:04:06,320][INFO ][o.e.n.Node               ] [h9_TyQL] started
+[2019-02-09T20:04:07,007][INFO ][o.e.g.GatewayService     ] [h9_TyQL] recovered [3] indices into cluster_state
+[2019-02-09T20:04:08,346][INFO ][o.e.c.r.a.AllocationService] [h9_TyQL] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[libraryserbian][0]] ...]).
+[2019-02-09T20:05:39,600][INFO ][o.e.b.Bootstrap          ] running graceful exit on windows
+[2019-02-09T20:05:39,602][INFO ][o.e.n.Node               ] [h9_TyQL] stopping ...
+[2019-02-09T20:05:39,715][INFO ][o.e.n.Node               ] [h9_TyQL] stopped
+[2019-02-09T20:05:39,716][INFO ][o.e.n.Node               ] [h9_TyQL] closing ...
+[2019-02-09T20:05:39,742][INFO ][o.e.n.Node               ] [h9_TyQL] closed

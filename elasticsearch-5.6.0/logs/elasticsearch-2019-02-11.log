@@ -1,0 +1,177 @@
+[2019-02-11T20:36:16,090][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 12 more
+[2019-02-11T20:36:16,116][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:67) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.0.jar:5.6.0]
+Caused by: java.lang.IllegalStateException: Unable to access 'path.data' (F:\dataUDD)
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:444) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+Caused by: java.nio.file.FileSystemException: F:\dataUDD: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Files.java:756) ~[?:1.8.0_191]
+	at org.elasticsearch.bootstrap.Security.ensureDirectoryExists(Security.java:486) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addPath(Security.java:442) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.addFilePermissions(Security.java:285) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.createPermissions(Security.java:240) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Security.configure(Security.java:118) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:228) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.0.jar:5.6.0]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.0.jar:5.6.0]
+	... 6 more
+[2019-02-11T20:39:25,231][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-11T20:39:25,861][INFO ][o.e.e.NodeEnvironment    ] [YmSPWrh] using [1] data paths, mounts [[(C:)]], net usable_space [129gb], net total_space [222.1gb], spins? [unknown], types [NTFS]
+[2019-02-11T20:39:25,862][INFO ][o.e.e.NodeEnvironment    ] [YmSPWrh] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-11T20:39:25,867][INFO ][o.e.n.Node               ] node name [YmSPWrh] derived from node ID [YmSPWrh9S_iRYaujHEbSVA]; set [node.name] to override
+[2019-02-11T20:39:25,868][INFO ][o.e.n.Node               ] version[5.6.0], pid[18364], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2019-02-11T20:39:25,868][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Milan\OneDrive\Desktop\elasticsearch-5.6.0]
+[2019-02-11T20:39:29,733][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [aggs-matrix-stats]
+[2019-02-11T20:39:29,734][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [ingest-common]
+[2019-02-11T20:39:29,734][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [lang-expression]
+[2019-02-11T20:39:29,735][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [lang-groovy]
+[2019-02-11T20:39:29,735][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [lang-mustache]
+[2019-02-11T20:39:29,735][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [lang-painless]
+[2019-02-11T20:39:29,736][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [parent-join]
+[2019-02-11T20:39:29,736][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [percolator]
+[2019-02-11T20:39:29,737][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [reindex]
+[2019-02-11T20:39:29,737][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [transport-netty3]
+[2019-02-11T20:39:29,737][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded module [transport-netty4]
+[2019-02-11T20:39:29,738][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded plugin [analysis-icu]
+[2019-02-11T20:39:29,739][INFO ][o.e.p.PluginsService     ] [YmSPWrh] loaded plugin [serbian-plugin]
+[2019-02-11T20:39:34,189][INFO ][o.e.d.DiscoveryModule    ] [YmSPWrh] using discovery type [zen]
+[2019-02-11T20:39:34,929][INFO ][o.e.n.Node               ] initialized
+[2019-02-11T20:39:34,929][INFO ][o.e.n.Node               ] [YmSPWrh] starting ...
+[2019-02-11T20:39:38,107][INFO ][o.e.t.TransportService   ] [YmSPWrh] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-11T20:39:38,122][WARN ][o.e.b.BootstrapChecks    ] [YmSPWrh] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-11T20:39:41,198][INFO ][o.e.c.s.ClusterService   ] [YmSPWrh] new_master {YmSPWrh}{YmSPWrh9S_iRYaujHEbSVA}{oM2nd9eARYy2sUp_ZSz7DA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-11T20:39:41,268][INFO ][o.e.g.GatewayService     ] [YmSPWrh] recovered [0] indices into cluster_state
+[2019-02-11T20:39:42,865][INFO ][o.e.h.n.Netty4HttpServerTransport] [YmSPWrh] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-11T20:39:42,865][INFO ][o.e.n.Node               ] [YmSPWrh] started
+[2019-02-11T20:40:01,409][INFO ][o.e.n.Node               ] [YmSPWrh] stopping ...
+[2019-02-11T20:40:01,436][INFO ][o.e.n.Node               ] [YmSPWrh] stopped
+[2019-02-11T20:40:01,437][INFO ][o.e.n.Node               ] [YmSPWrh] closing ...
+[2019-02-11T20:40:01,452][INFO ][o.e.n.Node               ] [YmSPWrh] closed
+[2019-02-11T20:40:48,727][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-11T20:40:48,874][INFO ][o.e.e.NodeEnvironment    ] [2hpnhjN] using [1] data paths, mounts [[(C:)]], net usable_space [129gb], net total_space [222.1gb], spins? [unknown], types [NTFS]
+[2019-02-11T20:40:48,875][INFO ][o.e.e.NodeEnvironment    ] [2hpnhjN] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-11T20:40:48,907][INFO ][o.e.n.Node               ] node name [2hpnhjN] derived from node ID [2hpnhjNrQrCRwKfdp1VVZw]; set [node.name] to override
+[2019-02-11T20:40:48,908][INFO ][o.e.n.Node               ] version[5.6.0], pid[16576], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2019-02-11T20:40:48,909][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Milan\OneDrive\Desktop\elasticsearch-5.6.0]
+[2019-02-11T20:40:51,141][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [aggs-matrix-stats]
+[2019-02-11T20:40:51,142][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [ingest-common]
+[2019-02-11T20:40:51,143][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [lang-expression]
+[2019-02-11T20:40:51,143][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [lang-groovy]
+[2019-02-11T20:40:51,144][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [lang-mustache]
+[2019-02-11T20:40:51,144][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [lang-painless]
+[2019-02-11T20:40:51,145][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [parent-join]
+[2019-02-11T20:40:51,146][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [percolator]
+[2019-02-11T20:40:51,146][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [reindex]
+[2019-02-11T20:40:51,147][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [transport-netty3]
+[2019-02-11T20:40:51,147][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded module [transport-netty4]
+[2019-02-11T20:40:51,149][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded plugin [analysis-icu]
+[2019-02-11T20:40:51,149][INFO ][o.e.p.PluginsService     ] [2hpnhjN] loaded plugin [serbian-plugin]
+[2019-02-11T20:40:55,806][INFO ][o.e.d.DiscoveryModule    ] [2hpnhjN] using discovery type [zen]
+[2019-02-11T20:40:56,854][INFO ][o.e.n.Node               ] initialized
+[2019-02-11T20:40:56,855][INFO ][o.e.n.Node               ] [2hpnhjN] starting ...
+[2019-02-11T20:40:59,401][INFO ][o.e.t.TransportService   ] [2hpnhjN] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-11T20:40:59,414][WARN ][o.e.b.BootstrapChecks    ] [2hpnhjN] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-11T20:41:02,494][INFO ][o.e.c.s.ClusterService   ] [2hpnhjN] new_master {2hpnhjN}{2hpnhjNrQrCRwKfdp1VVZw}{PTkC-w1jTvK3_SjTisUA_Q}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-11T20:41:04,465][INFO ][o.e.g.GatewayService     ] [2hpnhjN] recovered [1] indices into cluster_state
+[2019-02-11T20:41:06,820][INFO ][o.e.c.r.a.AllocationService] [2hpnhjN] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[scientificpaper][0]] ...]).
+[2019-02-11T20:41:09,446][INFO ][o.e.h.n.Netty4HttpServerTransport] [2hpnhjN] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-11T20:41:09,447][INFO ][o.e.n.Node               ] [2hpnhjN] started
+[2019-02-11T20:44:43,244][INFO ][o.e.n.Node               ] [2hpnhjN] stopping ...
+[2019-02-11T20:44:43,332][INFO ][o.e.n.Node               ] [2hpnhjN] stopped
+[2019-02-11T20:44:43,333][INFO ][o.e.n.Node               ] [2hpnhjN] closing ...
+[2019-02-11T20:44:43,344][INFO ][o.e.n.Node               ] [2hpnhjN] closed
+[2019-02-11T20:45:24,637][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-11T20:45:25,265][INFO ][o.e.e.NodeEnvironment    ] [MLAsd3i] using [1] data paths, mounts [[(C:)]], net usable_space [129gb], net total_space [222.1gb], spins? [unknown], types [NTFS]
+[2019-02-11T20:45:25,266][INFO ][o.e.e.NodeEnvironment    ] [MLAsd3i] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-11T20:45:25,271][INFO ][o.e.n.Node               ] node name [MLAsd3i] derived from node ID [MLAsd3idQ6yoVQwifIg28A]; set [node.name] to override
+[2019-02-11T20:45:25,272][INFO ][o.e.n.Node               ] version[5.6.0], pid[3512], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2019-02-11T20:45:25,272][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Milan\OneDrive\Desktop\elasticsearch-5.6.0]
+[2019-02-11T20:45:27,426][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [aggs-matrix-stats]
+[2019-02-11T20:45:27,427][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [ingest-common]
+[2019-02-11T20:45:27,428][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [lang-expression]
+[2019-02-11T20:45:27,428][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [lang-groovy]
+[2019-02-11T20:45:27,429][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [lang-mustache]
+[2019-02-11T20:45:27,429][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [lang-painless]
+[2019-02-11T20:45:27,429][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [parent-join]
+[2019-02-11T20:45:27,430][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [percolator]
+[2019-02-11T20:45:27,431][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [reindex]
+[2019-02-11T20:45:27,431][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [transport-netty3]
+[2019-02-11T20:45:27,432][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded module [transport-netty4]
+[2019-02-11T20:45:27,433][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded plugin [analysis-icu]
+[2019-02-11T20:45:27,434][INFO ][o.e.p.PluginsService     ] [MLAsd3i] loaded plugin [serbian-plugin]
+[2019-02-11T20:45:31,484][INFO ][o.e.d.DiscoveryModule    ] [MLAsd3i] using discovery type [zen]
+[2019-02-11T20:45:32,252][INFO ][o.e.n.Node               ] initialized
+[2019-02-11T20:45:32,253][INFO ][o.e.n.Node               ] [MLAsd3i] starting ...
+[2019-02-11T20:45:35,404][INFO ][o.e.t.TransportService   ] [MLAsd3i] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-11T20:45:35,433][WARN ][o.e.b.BootstrapChecks    ] [MLAsd3i] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-11T20:45:38,545][INFO ][o.e.c.s.ClusterService   ] [MLAsd3i] new_master {MLAsd3i}{MLAsd3idQ6yoVQwifIg28A}{5ixJ_x6jQoOhyP6yihfveA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-11T20:45:38,620][INFO ][o.e.g.GatewayService     ] [MLAsd3i] recovered [0] indices into cluster_state
+[2019-02-11T20:45:40,388][INFO ][o.e.h.n.Netty4HttpServerTransport] [MLAsd3i] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-11T20:45:40,389][INFO ][o.e.n.Node               ] [MLAsd3i] started
+[2019-02-11T20:46:12,743][INFO ][o.e.n.Node               ] [MLAsd3i] stopping ...
+[2019-02-11T20:46:12,772][INFO ][o.e.n.Node               ] [MLAsd3i] stopped
+[2019-02-11T20:46:12,773][INFO ][o.e.n.Node               ] [MLAsd3i] closing ...
+[2019-02-11T20:46:12,789][INFO ][o.e.n.Node               ] [MLAsd3i] closed
+[2019-02-11T20:46:32,780][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-02-11T20:46:33,538][INFO ][o.e.e.NodeEnvironment    ] [EKhPHmJ] using [1] data paths, mounts [[(C:)]], net usable_space [129gb], net total_space [222.1gb], spins? [unknown], types [NTFS]
+[2019-02-11T20:46:33,539][INFO ][o.e.e.NodeEnvironment    ] [EKhPHmJ] heap size [483.3mb], compressed ordinary object pointers [true]
+[2019-02-11T20:46:33,544][INFO ][o.e.n.Node               ] node name [EKhPHmJ] derived from node ID [EKhPHmJWQ66LZPiHPZJRfA]; set [node.name] to override
+[2019-02-11T20:46:33,545][INFO ][o.e.n.Node               ] version[5.6.0], pid[17776], build[781a835/2017-09-07T03:09:58.087Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_191/25.191-b12]
+[2019-02-11T20:46:33,546][INFO ][o.e.n.Node               ] JVM arguments [-Xms200m, -Xmx500m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Milan\OneDrive\Desktop\elasticsearch-5.6.0]
+[2019-02-11T20:46:35,917][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [aggs-matrix-stats]
+[2019-02-11T20:46:35,918][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [ingest-common]
+[2019-02-11T20:46:35,918][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [lang-expression]
+[2019-02-11T20:46:35,919][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [lang-groovy]
+[2019-02-11T20:46:35,919][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [lang-mustache]
+[2019-02-11T20:46:35,920][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [lang-painless]
+[2019-02-11T20:46:35,920][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [parent-join]
+[2019-02-11T20:46:35,921][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [percolator]
+[2019-02-11T20:46:35,921][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [reindex]
+[2019-02-11T20:46:35,922][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [transport-netty3]
+[2019-02-11T20:46:35,922][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded module [transport-netty4]
+[2019-02-11T20:46:35,923][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded plugin [analysis-icu]
+[2019-02-11T20:46:35,924][INFO ][o.e.p.PluginsService     ] [EKhPHmJ] loaded plugin [serbian-plugin]
+[2019-02-11T20:46:39,627][INFO ][o.e.d.DiscoveryModule    ] [EKhPHmJ] using discovery type [zen]
+[2019-02-11T20:46:40,361][INFO ][o.e.n.Node               ] initialized
+[2019-02-11T20:46:40,361][INFO ][o.e.n.Node               ] [EKhPHmJ] starting ...
+[2019-02-11T20:46:43,233][INFO ][o.e.t.TransportService   ] [EKhPHmJ] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2019-02-11T20:46:43,249][WARN ][o.e.b.BootstrapChecks    ] [EKhPHmJ] initial heap size [209715200] not equal to maximum heap size [524288000]; this can cause resize pauses and prevents mlockall from locking the entire heap
+[2019-02-11T20:46:46,321][INFO ][o.e.c.s.ClusterService   ] [EKhPHmJ] new_master {EKhPHmJ}{EKhPHmJWQ66LZPiHPZJRfA}{hin35m5hT0yMPjcN5Fuy7A}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2019-02-11T20:46:46,385][INFO ][o.e.g.GatewayService     ] [EKhPHmJ] recovered [0] indices into cluster_state
+[2019-02-11T20:46:47,900][INFO ][o.e.h.n.Netty4HttpServerTransport] [EKhPHmJ] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2019-02-11T20:46:47,901][INFO ][o.e.n.Node               ] [EKhPHmJ] started
+[2019-02-11T20:47:54,638][INFO ][o.e.c.m.MetaDataCreateIndexService] [EKhPHmJ] [scientificpaper] creating index, cause [api], templates [], shards [1]/[1], mappings []
+[2019-02-11T20:47:55,076][INFO ][o.e.c.m.MetaDataMappingService] [EKhPHmJ] [scientificpaper/j9uKdsQMT_WbBtV12HId-w] create_mapping [paper]
+[2019-02-11T20:48:02,752][INFO ][o.e.c.m.MetaDataMappingService] [EKhPHmJ] [scientificpaper/j9uKdsQMT_WbBtV12HId-w] update_mapping [paper]
